@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/bootstrap.css">
+    <link rel="stylesheet" href="./style/bootstrap.min.css">
+    <link rel="stylesheet" href="./style/payment.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <title>Payment</title>
+</head>
+<body>
+        <div class="content p-4">
+            <form action="https://api.web3forms.com/submit" method="POST" class="row g-3 " >
+            <div class="col-md-6 ">
+              <input type="hidden" name="access_key" value="76034fb6-4c17-42f3-8a34-54602c129520">
+                <h3>BILLING ADDRESS</h3>
+                <div class="col-md-12">
+                    <label for="inputPassword4" class="form-label ">Fullname</label>
+                    <input type="name" class="form-control" required  name="Fullname" id="inputPassword4" placeholder="John Doe">
+                  </div>
+                  <div class="col-md-12">
+                    <label for="inputAddress" class="form-label ">Email</label>
+                    <input type="email" class="form-control" required name="Email" id="inputEmail" placeholder="Email">
+                  </div>
+                  <div class="col-md-12">
+                    <label for="inputAddress2" class="form-label ">Address</label>
+                    <input type="text" class="form-control" required name="Address" id="inputAddress" placeholder="Enter Adderss">
+                  </div>
+                  <div class="col-md-12">
+                    <label for="inputAddress2" class="form-label ">City</label>
+                    <input type="text" class="form-control" required name="City" id="inputAddress" placeholder="Enter City">
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6">
+                        <label for="inputCity" class="form-label ">State</label>
+                        <input type="text" class="form-control" required name="State" placeholder="Enter State" id="inputCity">
+                      </div>
+                      <div class="col-md-6">
+                        <label for="inputCity" class="form-label ">Zip Code</label>
+                        <input type="number" class="form-control" required name="Zip code" placeholder="123456" id="inputCity">
+                      </div>
+                  </div>
+            </div>
+            <div class="col-md-6">
+                <h3>PAYMENT</h3>
+                <div class="accepted">
+                    <p>Accepted Cards</p>
+                    <div class="cardImg">
+                      <img src="./img/visa.jpg" alt="visa" width="60px" height="40px">
+                      <img src="./img/mastercard.png" alt="mastercard" width="60px" height="40px">
+                    </div>
+                     
+                </div>
+                    <div class="col-md-12">
+                    <label for="inputPassword4" class="form-label ">Credit card Number</label>
+                    <input type="number" class="form-control" required name="Credit card number" id="inputCardNumber4" placeholder="">
+                  </div>
+                    <div class="col-md-12">
+                    <label for="inputPassword4" class="form-label ">Exp Month</label>
+                    <input type="type" class="form-control" required name="Exp Month" id="inputExpMonth4" placeholder="">
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6">
+                        <label for="inputPassword4" class="form-label ">Exp Year</label>
+                    <input type="number" min="1900" max="2099" value="2024" class="form-control" required name="Exp Year" id="inputExpYear4">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inputPassword4" class="form-label ">CVV</label>
+                    <input type="number" class="form-control" required name="CVV" id="inputCvv4" placeholder="">
+                    </div>
+                  </div>
+            </div>
+
+            <input type="hidden" name="_next" value="thank.html">
+           
+            <div class="checkout">
+                <button type="submit" class="btn btn-primary" >Procced to checkout</button>
+            </div>
+           
+        </form>
+        </div>
+
+
+    
+</body>
+</html>

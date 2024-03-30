@@ -1,0 +1,128 @@
+
+
+body{
+    margin: 0;
+    font-family: sans-serif;
+    background: #ffff;
+    margin-bottom: 50px;
+    width: 100%;
+}
+.gallery h3{
+    text-align: center;
+    font-size: 26px;
+    margin: 0;
+    padding-top: 10px;
+}
+.gallery a{
+    text-decoration: none;
+}
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+}
+.gallery .content{
+    flex: 1 0 15rem;
+    text-align: justify;
+    width: 20%;
+    margin: 20px;
+    box-sizing: border-box;
+    float: left;
+    text-align: center;
+    border-radius: 20px;
+    padding-top: 10px;
+    box-shadow: 0 3px 2px rgba(0,0,0,0.16),
+    0 3px 2px rgba(0,0,0,0.23);
+    transition: .4s;
+    background: #fff;
+}
+.gallery .content:hover{
+    box-shadow: 0 3px 8px rgba(0,0,0,0.30),
+    0 3px 6px rgba(0,0,0,0.30);
+    transform: translate(0px, -8px);
+}
+.gallery img{
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+}
+.gallery p{
+    text-align: center;
+    color: black;
+    padding: 5px 20px;
+}
+.gallery h6{
+    font-size: 26px;
+    text-align: center;
+    color: #222f3e;
+    margin: 0;
+}
+.gallery ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0;
+}
+.gallery ul li{
+    padding-top: 5px;
+}
+.gallery .fa{
+    font-size: 26px;
+    margin: 3px;
+    
+}
+.gallery .checked{
+    color: #ff9f43;
+    
+}
+.gallery button{
+    text-align: center;
+    font-size: 24px;
+    color: #fff;
+    width: 100%;
+    padding: 15px;
+    border: 0px;
+    outline: none;
+    cursor: pointer;
+    margin-top: 5px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.gallery .buy-1{
+    background: #2183a2;
+}
+.gallery .buy-2{
+    background: #3b3e6e;
+}
+.gallery .buy-3{
+    background: #0b0b0b;
+}
+.gallery .buy-4{
+    background: #ff9f43;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 770px) {
+    .productDiv {
+        width: 80%;
+    }
+    .paymentDiv a{
+        font-size: 1rem;
+    }
+    .gallery .content {
+        width: 60%;
+    }
+}
